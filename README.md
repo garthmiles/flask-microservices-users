@@ -1,0 +1,68 @@
+# Microservices with Docker, Flask, and React
+An _online_ tutorial from [tesdriven.io](https://testdriven.io/)
+## todo
+- P1
+    - L2: ~~Getting Started~~
+    - L3: Docker Config
+    - L4: Postgres Setup
+    - L5: Test Setup
+    - L6: Flask Blueprints
+    - L8: RESTful Routes
+    - L9: Jinja Templates
+    - L10: Workflow
+- P2
+    - L2: Project Refactor
+    - L3: Code Coverage
+    - L4: Continuous Integration
+    - L5: React Setup
+    - L6: Flask Deployment
+    - L7: React Forms
+    - L8: React and Docker
+    - L9: Flast Refactor
+- P3
+    - L2: Flask Migrate
+    - L3: Flask Bcrypt
+    - L4: JWT Setup
+    - L5: Auth Routes
+    - L6: React Router
+    - L7: React Bootstrap
+    - L8: React Authentication
+    - L9: Authorization
+    - L10: Update Component
+    - L11: Update Docker
+- P4
+    - L2: End-to-End Test Setup
+    - L3: End-to-End Test Specs
+    - L4: React Component Refactor
+    - L5: React Form Validation
+    - L6: React Flash Messaging
+    - L7: Swagger Setup
+    - L8: Staging Environment
+    - L9: Workflow
+- P5
+    - L2: Docker Hub
+    - L3: EC2 Container Registry
+    - L4: EC2 Container Service
+    - L5: Elastic Load Balancing
+    - L6: ECS Staging
+    - L7: Settup up RDS
+    - L8: ECS Production
+    - L9: Workflow
+- P6
+    - L2: Eval Service Setup
+    - L3: Scores API Database
+    - L4: Scores API Routes
+    - L5: Exercises API
+    - L6: React Refactor
+    - L7: End-to-End Tests Refactor
+    - L8: React Ace Code Editor
+    - L9: Code Evaluation
+    - L10: ECS Deployment
+    - L11: Next Steps:
+        - More tests: Increase the overall test coverage of each service.
+        - Test the Lambda function: Try testing with AWS Serverless Application Model (AWS SAM)
+        - Message queue: Add a simple message queue - like Redis Queue or RabbitMQ
+        - Swagger: The API documentation is way out of date. Update it!
+        - Exercise component state: What happens if a user submits an exercise and then closes the browser before it's complete? Also, how would you indicate to the end user that they have already submitted an exercise?
+        - DRY out the code: There's plenty of places in the code base that could be refactored. Did you notice that we could clean up the exercise status message (grading, incorrect, correct) logic by organizing it into a single method? Try this on your own.
+        - Summary table: How about adding a summary table for individual user scores? Maybe individual users could just view their own scores while an admin can view all user scores.
