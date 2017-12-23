@@ -3,6 +3,7 @@ import os
 import sys  
 # import 3rd-party modules
 from flask import Flask, jsonify
+from flask_sqlalchemy import SQLAlchemy
 
 # instantiate the app
 app = Flask(__name__)
