@@ -2,7 +2,15 @@
 from flask_script import Manager
 from project import app 
 
+# instantiate the app
 mgr = Manager(app)
+
+@mgr.command
+def recreate_db():
+    """recreates the db"""
+    db.drop_all()
+    db.create_all()
+    db.session.commit()
 
 if __name__ == '__main__':
     """
