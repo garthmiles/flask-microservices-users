@@ -1,7 +1,7 @@
-# import core modules
+# imports - core modules
 import os 
 import sys  
-# import 3rd-party modules
+# imports - 3rd-party modules
 from flask import Flask, jsonify
 from flask_sqlalchemy import SQLAlchemy
 
