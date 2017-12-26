@@ -1,5 +1,6 @@
-__pycache__ 
-env
 .vscode
+__pycache__ 
 
+docker-compose.yml 
+env
 helper-commands.md
