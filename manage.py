@@ -1,6 +1,6 @@
 # import 3rd-party modules
 from flask_script import Manager
-from project import app 
+from project import app, db 
 
 # instantiate the app
 mgr = Manager(app)
