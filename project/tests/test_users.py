@@ -13,3 +13,4 @@ class TestUserService(BaseTestCase):
         self.assertEqual(response.status_code, 200)
         self.assertIn('pong!', data['message'])
         self.assertIn('success', data['status'])
+        
