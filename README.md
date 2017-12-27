@@ -5,7 +5,7 @@ An _online_ tutorial from [tesdriven.io](https://testdriven.io/)
     - L2: ~~Getting Started~~
     - L3: ~~Docker Config~~
     - L4: ~~Postgres Setup~~
-    - L5: Test Setup
+    - L5: ~~Test Setup~~
     - L6: Flask Blueprints
     - L8: RESTful Routes
     - L9: Jinja Templates
