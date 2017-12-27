@@ -3,9 +3,11 @@ import unittest
 # imports - 3rd-party modules
 from flask_script import Manager
 # imports - local modules
-from project import app, db 
+from project import create_app, db 
+from project.api.models import User 
 
 # instantiate the app
+app = create_app()
 mgr = Manager(app)
 
 @mgr.command
