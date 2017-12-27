@@ -6,12 +6,15 @@ from dotenv import find_dotenv, load_dotenv
 from flask import current_app
 from flask_testing import TestCase
 # imports - local modules
-from project import app 
+from project import create_app
 
 # load local 'env' values
 load_dotenv(find_dotenv())
 POSTGRES_USER = os.environ.get('POSTGRES_USER')
 POSTGRES_PASSWORD = os.environ.get('POSTGRES_PASSWORD')
+
+# instantiate the app 
+app = create_app()
 
 # construct main db url string
 DB_URI = f'postgres://{POSTGRES_USER}:{POSTGRES_PASSWORD}@users-db:5432'
