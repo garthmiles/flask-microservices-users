@@ -7,9 +7,9 @@ An _online_ tutorial from [tesdriven.io](https://testdriven.io/)
     - L4: ~~Postgres Setup~~
     - L5: ~~Test Setup~~
     - L6: ~~Flask Blueprints~~
-    - L8: RESTful Routes
-    - L9: Jinja Templates
-    - L10: Workflow
+    - L7: RESTful Routes
+    - L8: Jinja Templates
+    - L9: Workflow
 - P2
     - L2: Project Refactor
     - L3: Code Coverage
