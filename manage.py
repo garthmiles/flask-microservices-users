@@ -1,5 +1,6 @@
-# import 3rd-party modules
+# imports - 3rd-party modules
 from flask_script import Manager
+# imports - local modules
 from project import app, db 
 
 # instantiate the app
