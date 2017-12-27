@@ -1,4 +1,5 @@
 # imports - core modules
+import os 
 import unittest 
 # imports - 3rd-party modules
 from dotenv import find_dotenv, load_dotenv
@@ -9,6 +10,8 @@ from project import app
 
 # load local 'env' values
 load_dotenv(find_dotenv())
+POSTGRES_USER = os.environ.get('POSTGRES_USER')
+POSTGRES_PASSWORD = os.environ.get('POSTGRES_PASSWORD')
 
 # construct main db url string
 DB_URI = f'postgres://{POSTGRES_USER}:{POSTGRES_PASSWORD}@users-db:5432'
@@ -40,7 +43,7 @@ class TestTestingConfig(TestCase):
         self.assertFalse(app.config['PRESERVE_CONTEXT_ON_EXCEPTION'])
         self.assertTrue(app.config['SQLALCHEMY_DATABASE_URI'] == DB_URI + '/users_test')
 
-class TestProductionConfig(self):
+class TestProductionConfig(TestCase):
     global DB_URI
     def create_app(self):
         app.config.from_object('project.config.ProductionConfig')
