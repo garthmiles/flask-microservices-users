@@ -1,7 +1,7 @@
 # imports - core modules
 import json 
 # imports - local modules
-from projects.tests.base import BaseTestCase 
+from project.tests.base import BaseTestCase 
 
 class TestUserService(BaseTestCase):
     """Tests for the Users Service"""
@@ -13,4 +13,3 @@ class TestUserService(BaseTestCase):
         self.assertEqual(response.status_code, 200)
         self.assertIn('pong!', data['message'])
         self.assertIn('success', data['status'])
-        
