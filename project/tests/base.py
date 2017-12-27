@@ -1,7 +1,10 @@
 # imports - 3rd-party modules
 from flask_testing import TestCase
 # imports - local modules
-from project import app, db 
+from project import create_app, db 
+
+# instantiate the app 
+app = create_app()
 
 class BaseTestCase(TestCase):
     def create_app(self):
